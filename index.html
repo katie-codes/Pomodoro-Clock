@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Pomodoro Clock </title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    
+<div class="title">
+  <h1>Pomodoro Clock</h1>
+</div>
+
+<div class="frame">
+  
+  <div class="timer">
+    <p id="countdown"> 00:00 </p>
+  </div>
+  
+  <div class="labels">
+    <span class="break_label">
+      <p>Break</p>
+      </span>
+    
+    <span class="timer_label">
+      <p>Timer</p>
+        </span>
+  </div>
+  
+  
+  <div class="counters">
+    <span class="break_counter" id="break"> 
+      <input type="text readonly" value="0" id="break_field" readonly/>
+    </span>
+    
+    <span class="start_button">
+      <button id="start_button" type="button" onClick="countdownToDom(timer_counter);">Go!</button>
+    </span>
+    
+    <span class="timer_counter" id="timer"> 
+      <input type="text readonly" value="0" id="timer_field" readonly/>
+    </span>
+  </div>
+  
+  
+  <div class="buttons"> 
+    <button value="-" type="button" id="minus_break" onclick="counterFunction.breakCounterMinus(break_field);"> - </button>
+   
+    
+    <button type="button" value="+" id="plus_break" onClick="counterFunction.breakCounterPlus(break_field);"> + </button>
+ 
+    <button value="-" id="minus_timer" type="button"  onClick="counterFunction.timerCounterMinus(timer_field);"> - </button> 
+    <button value="+" id="plus_timer" type="button"  onClick="counterFunction.timerCounterPlus(timer_field);"> + </button>
+  </div>
+ 
+</div>
+
+<div class="restart frame"> 
+    <button type="button" value="restart" id="restart_button" onClick="restart();">Restart</button>
+  </div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

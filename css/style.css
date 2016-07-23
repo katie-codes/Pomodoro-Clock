@@ -1,0 +1,97 @@
+body {
+   font-family: "century gothic";
+}
+
+h1 {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.timer {
+  margin-top: -30px;
+  font-size: 50px;
+  
+}
+
+.break_label {
+  position: absolute;
+  left: 35px;
+  bottom: 75px;
+}
+
+.timer_label {
+  position: absolute;
+  bottom: 75px;
+  right: 35px;
+}
+.frame {
+  border: solid 1px;
+  border-color: lightgrey;
+  height: 200px;
+  width: 350px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 25px;
+}
+ 
+button {
+  width: 40px;
+  height: 30px;
+  font-size: 14px;
+}
+
+#minus_timer {
+  margin-left: 148px;
+}
+
+#minus_break {
+  margin-left: 15px;
+}
+
+
+span {
+  position: absolute;
+  bottom: 60px;
+ 
+}
+
+.timer_counter {
+  left: 250px;
+}
+
+.break_counter {
+  left: 15px;
+}
+
+input[type="text readonly"] {
+  width: 80px;
+  height: 20px;
+  text-align: center;
+}
+
+#start_button {
+  position: absolute;
+  left: -30px;
+  bottom: -30px;
+  height: 50px;
+  width: 60px;
+}
+
+.restart {
+  border: none;
+  margin-top: 20px;
+  height: 100px;
+}
+
+#restart_button {
+  width: 60px;
+  height: 30px;
+
+}
